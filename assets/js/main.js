@@ -77,6 +77,8 @@
 					visibleClass: 'is-menu-visible'
 				});
 
+		//Carousel
+   
 		// Header.
 			if (skel.vars.IEVersion < 9)
 				$header.removeClass('alt');
