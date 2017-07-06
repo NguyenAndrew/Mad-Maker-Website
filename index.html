@@ -16,7 +16,7 @@
 	<head>
 		<title>Grainger Engineering Design Innovation Lab</title>
 		<meta charset="utf-8" />
-		<meta name="UWMadisonMakerspace" content="width=device-width, initial-scale=1 the front page of the makerspace website">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -154,7 +154,7 @@
 							      <div class="item">Mastiff</div>
 							    </div>
 							  </div>
-							</div>						
+							</div>
 					</section>
 
 				<!-- events-->
@@ -164,21 +164,14 @@
 							<header>
 								<h2 id="events">Upcoming events</h2>
 								<!--adding carousel here -->
-								<div class="carousel slide" data-ride="carousel" id="eventsCarousel">
-									<div class="=carousel-inner">
-										<div class="item acrive"><img src="#" alt="img1"></div>
-										<div class="item"><img src="#" alt="img2"></div>
-										<div class="item"><img src="#" alt="img3"></div>
-										<div class="item"><img src="#" alt="img4"></div>
-								</div><!-- carousel inner -->
-								<a class="left carousel-control" href="#eventsCarousel" role="button" data-slide="prev">
-									<span class="icon fa-arrow-left"></span>
-								</a>
-								<a class="right carousel-control" href="#eventsCarousel" role="button" data-slide="next">
-									<span class="icon fa-arrow-right"></span>
-								</a>
-
-								</div><!-- carousel end -->
+								<div class="cwrapper">
+ <img class="mySlides" src="images/front-page3.jpg">
+<img class="mySlides" src="images/front-page2.jpg">
+<img class="mySlides" src="images/front-page1.jpg">
+<img class="mySlides" src="images/front-page2.jpg">
+ </div>
+ <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button><!-- carousel end -->
 							</header>
 						</div>
 					</section>
@@ -204,6 +197,25 @@
 			</div>
 
 		<!-- Scripts -->
+		<script type="text/javascript">
+			var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+}
+		</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
