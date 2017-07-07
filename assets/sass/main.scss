@@ -227,9 +227,6 @@
 			top: -0.25em;
 		}
 
-		h2 + p {
-		}
-
 		h3 + p {
 			font-size: 1.1em;
 		}
@@ -1351,7 +1348,6 @@
 			position: absolute;
 			right: 0;
 			top: 0;
-			vertical-align: middle;
 			width: 7em;
 		}
 
@@ -1411,7 +1407,6 @@
 			height: inherit;
 			line-height: inherit;
 			position: absolute;
-			center: 0;
 			right: 0;
 			top: 0;
 
@@ -1910,3 +1905,4 @@
 			}
 		}
 	}
+}
